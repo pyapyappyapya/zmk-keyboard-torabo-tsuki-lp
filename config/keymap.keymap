@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -103,111 +102,111 @@
 
         default_layer {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &lt 5 P  &trans
-            &trans  &lt 2 A  &kp S  &kp D  &kp F  &kp G  &kp LS(LG(C_MUTE))  &kp HOME  &kp H  &kp J  &kp K  &kp L  &kp MINUS  &trans
-            &trans  &mt LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C  &kp V  &kp B  &kp PRINTSCREEN  &kp END  &kp N  &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH  &trans
-            &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &trans  &td_lang  &kp SPACE  &kp BACKSPACE  &lt 4 ENTER  &lt 1 TILDE  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans    &trans  &trans                                       &trans       &trans       &trans     &trans                   &trans       &trans
+&trans  &kp Q             &kp W             &kp E     &kp R   &kp T                                        &kp Y        &kp U        &kp I      &kp O                    &lt 5 P      &trans
+&trans  &lt 2 A           &kp S             &kp D     &kp F   &kp G     &trans              &trans         &kp H        &kp J        &kp K      &kp L                    &kp MINUS    &trans
+&trans  &mt LEFT_SHIFT Z  &mt LEFT_SHIFT X  &kp C     &kp V   &kp B     &kp LS(LG(C_MUTE))  &kp END        &kp N        &kp M        &kp COMMA  &kp DOT                  &lt 7 SLASH  &trans
+&trans  &kp LCTRL         &kp LEFT_WIN      &kp LALT  &mo 1   &td_lang  &kp SPACE           &kp BACKSPACE  &lt 4 ENTER  &lt 1 TILDE  &trans     &kp LS(LG(PRINTSCREEN))  &kp TILDE    &trans
             >;
         };
 
         num_arrow {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-            &trans  &trans  &trans  &trans  &kp SEMICOLON  &kp MINUS  &trans  &trans  &kp EQUAL  &kp SQT  &trans  &kp UP_ARROW  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans                     &trans     &trans   &trans          &trans          &trans           &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4         &kp N5                     &kp N6     &kp N7   &kp N8          &kp N9          &kp N0           &trans
+&trans  &trans  &trans  &trans  &kp SEMICOLON  &kp MINUS  &trans  &trans  &kp EQUAL  &kp SQT  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans         &trans     &trans  &trans  &trans     &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans         &trans     &trans  &trans  &trans     &trans   &trans          &trans          &trans           &trans
             >;
         };
 
         symbol {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-            &trans  &trans  &trans  &trans  &kp COLON  &kp UNDERSCORE  &trans  &trans  &kp PLUS  &kp DOUBLE_QUOTES  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans       &trans    &trans      &trans                          &trans     &trans             &trans        &trans                &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp LCTRL  &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &trans       &trans    &kp COLON   &kp UNDERSCORE  &trans  &trans  &kp PLUS   &kp DOUBLE_QUOTES  &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &trans           &trans       &trans    &trans      &trans          &trans  &trans  &trans     &trans             &trans        &trans                &trans                 &trans
+&trans  &trans           &trans       &trans    &trans      &trans          &trans  &trans  &trans     &trans             &trans        &trans                &trans                 &trans
             >;
         };
 
         tenkey_excel {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_MINUS  &kp KP_NUMLOCK  &trans  &trans  &trans  &trans  &kp LC(HOME)  &trans  &trans
-            &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp KP_SLASH  &kp MINUS  &trans  &trans  &trans  &kp LC(PAGE_UP)  &kp LC(END)  &lt 7 LC(PAGE_DOWN)  &trans
-            &kp KP_COMMA  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_EQUAL  &trans  &tog 3  &kp ENTER  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans  &trans
+&trans        &trans           &trans           &trans           &trans           &trans                                        &trans     &trans  &trans           &trans        &trans               &trans
+&trans        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &kp BACKSPACE                                 &trans     &trans  &trans           &trans        &trans               &trans
+&trans        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &kp KP_NUMLOCK  &trans         &trans     &trans  &trans           &kp LC(HOME)  &trans               &trans
+&trans        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp KP_SLASH   &kp MINUS       &trans         &trans     &trans  &kp LC(PAGE_UP)  &kp LC(END)   &lt 7 LC(PAGE_DOWN)  &trans
+&kp KP_COMMA  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &trans           &tog 3         &kp ENTER       &kp BACKSPACE  &kp ENTER  &trans  &trans           &trans        &trans               &trans
             >;
         };
 
         MOUSE_funktion {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-            &trans  &kp F11  &kp F12  &trans  &trans  &trans  &kp LG(LA(K))  &trans  &kp F2  &mkp MB1  &mkp MB2  &kp LS(LC(N5))  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(N)  &kp LS(LC(N7))  &kp LS(LC(R))  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &trans  &trans  &trans                         &trans  &trans    &trans     &trans          &trans         &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp F6  &kp F7    &kp F8     &kp F9          &kp F10        &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans         &trans  &kp F2  &mkp MB1  &mkp MB2   &kp LS(LC(N5))  &trans         &trans
+&trans  &trans   &trans   &trans  &trans  &trans  &kp LG(LA(K))  &trans  &trans  &trans    &kp LC(N)  &kp LS(LC(N7))  &kp LS(LC(R))  &trans
+&trans  &trans   &trans   &trans  &trans  &trans  &trans         &trans  &trans  &trans    &trans     &trans          &trans         &trans
             >;
         };
 
         SCROLL {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         bluetooth {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans  &bt BT_CLR  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &trans                       &trans        &trans          &trans        &trans        &trans        &trans
+&trans  &trans  &trans        &trans        &trans        &trans                       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans  &trans  &trans        &trans        &trans        &trans  &trans  &trans       &trans        &trans          &trans        &trans        &trans        &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader  &trans        &trans          &trans        &trans        &bt BT_CLR    &trans
+&trans  &trans  &trans        &trans        &trans        &trans  &trans  &trans       &trans        &bt BT_CLR_ALL  &trans        &trans        &trans        &trans
             >;
         };
 
         MOUSE {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
             >;
         };
 
         gesture_window {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         gesture_desktop {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         gesture_tab {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
