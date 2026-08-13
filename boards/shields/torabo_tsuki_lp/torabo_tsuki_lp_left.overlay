@@ -4,4 +4,24 @@
 
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+    scroller {
+        layers = <5>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+
+    gesture_window {
+        layers = <8>;
+        input-processors = <&zip_mouse_gesture_window>;
+    };
+
+    gesture_desktop {
+        layers = <9>;
+        input-processors = <&zip_mouse_gesture_desktop>;
+    };
+
+    gesture_tab {
+        layers = <10>;
+        input-processors = <&zip_mouse_gesture_tab>;
+    };
 };
